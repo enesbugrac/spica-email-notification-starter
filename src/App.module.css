@@ -1,0 +1,26 @@
+html {
+  --color-background: hsl(216, 8%, 12%);
+  --color-blue: hsl(208, 100%, 50%);
+  --color-gray: hsl(210, 3%, 25%);
+  --color-red: hsl(7, 73%, 35%);
+  --color-white: white;
+  --border-radius: 5px;
+
+  background-color: var(--color-background);
+  color: var(--color-blue);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 90vh;
+  padding: 50px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}

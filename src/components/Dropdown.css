@@ -1,0 +1,72 @@
+.dropdown {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-white);
+}
+
+.dropdown-header {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 900;
+}
+
+.dropdown-body {
+  opacity: 0;
+  border-top: 1px solid var(--color-white);
+  height: 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-body.open {
+  opacity: 1;
+  height: 250px;
+  padding: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-item {
+  opacity: 0;
+  font-weight: 900;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.dropdown-body.open .dropdown-item {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.dropdown-item:hover {
+  cursor: pointer;
+}
+
+.dropdown-item-dot {
+  opacity: 0;
+  color: var(--color-blue);
+  font-weight: 900;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-item-dot.selected {
+  opacity: 1;
+}
+
+.icon {
+  font-size: 13px;
+  color: var(--color-green);
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.icon.open {
+  transform: rotate(90deg);
+}
+.create-order-button {
+  border: none;
+  background-color: var(--color-white);
+  color: var(--color-green);
+  border-radius: 8px;
+  padding: 16px;
+}
