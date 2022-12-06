@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
-import styles from "./App.module.css";
-import Dropdown from "./components/Dropdown";
+import "./App.css";
+import Orders from "./components/Orders";
+import Products from "./components/Products";
 
 function App() {
   return (
-    <div className={styles["App"]}>
+    <div className={"App"}>
       <h1>SPICA CLOUD FUNCTION</h1>
-      <Dropdown />
+      <Products />
+      <Orders />
     </div>
   );
 }
