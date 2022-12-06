@@ -4,16 +4,10 @@ import { Order } from "../services/Order.service";
 
 const Orders = () => {
   const [orders, setOrders] = useState<Array<Order>>([]);
-  const [selectedItem, setSelectedItem] = useState<{
-    _id: string;
-    product_name: string;
-    owner_mail: string;
-  }>();
+
   useEffect(() => {}, []);
 
-  const handleDeleteOrder = (order: Order) => {
-    setSelectedItem(undefined);
-  };
+  const handleDeleteOrder = (order: Order) => {};
 
   return (
     <div className="container">
